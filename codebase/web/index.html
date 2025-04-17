@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Marketplace for customised products">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="nstudio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/assets/images/nstudio_logo.png"/>
+
+  <title>NStudio</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+     /* Hide the default Flutter progress bar */
+     .flutter-loader {
+      display: none !important;
+    }
+
+    .loading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    
+    .loading-indicator {
+      width: 50px;
+      height: 50px;
+      border: 8px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 8px solid #2A241A;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="loading" class="loading">
+    <img src="assets/assets/images/nstudio_logo.png" width="250" alt="Loading...">
+    <div class="loading-indicator"/>
+  </div>
+
+  <script>
+    window.addEventListener('load', function() {
+      window.addEventListener('flutter-first-frame', function() {
+        var loadingIndicator = document.getElementById('loading');
+        if (loadingIndicator) {
+          loadingIndicator.remove();
+        }
+      });
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

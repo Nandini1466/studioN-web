@@ -39,6 +39,15 @@ class HomeProductsRepository {
           isFeatured: true,
         ),
         HomeProductItem(
+          name: 'Flower Candle',
+          assetPathList: [
+            StudioImages.productFlowerCandle1,
+            StudioImages.productFlowerCandle2,
+          ].unmodifiable(),
+          type: HomeProductType.scentedCandles,
+          isFeatured: true,
+        ),
+        HomeProductItem(
           name: 'Hinglish Lyrics',
           assetPathList: [
             StudioImages.productLyricsHinglish1,
@@ -73,14 +82,6 @@ class HomeProductsRepository {
           assetPathList: [
             StudioImages.productCoffeeCandle2,
             StudioImages.productCoffeeCandle1,
-          ].unmodifiable(),
-          type: HomeProductType.scentedCandles,
-        ),
-        HomeProductItem(
-          name: 'Flower Candle',
-          assetPathList: [
-            StudioImages.productFlowerCandle1,
-            StudioImages.productFlowerCandle2,
           ].unmodifiable(),
           type: HomeProductType.scentedCandles,
         ),

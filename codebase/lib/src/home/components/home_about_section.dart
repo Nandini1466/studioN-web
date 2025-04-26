@@ -59,6 +59,7 @@ class HomeAboutSectionV2 extends StatelessWidget {
                       fontSize: 18,
                       color: StudioColors.mutedForeground,
                     ),
+                    textAlign: TextAlign.center,
                   ),
                 ],
               ),

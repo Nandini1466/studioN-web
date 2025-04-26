@@ -1,6 +1,8 @@
 final class StudioImages {
   static const String studioLogo = 'assets/images/nstudio_logo.png';
   static const String instagramLogo = 'assets/images/instagram_logo.svg';
+  static const String whatsappLogo = 'assets/images/whatsapp_logo.svg';
+  static const String mailLogo = 'assets/images/mail_logo.svg';
 
   static const String productBabyCollage =
       'assets/images/product_baby_collage.jpg';

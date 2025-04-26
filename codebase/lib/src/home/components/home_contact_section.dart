@@ -82,8 +82,6 @@ class _SocialOptionsRow extends StatelessWidget {
             StudioImages.instagramLogo,
             width: iconSize,
             height: iconSize,
-            fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(Colors.black, BlendMode.srcIn),
           ),
           onPressed: onInstagramClicked,
         ),
@@ -91,10 +89,10 @@ class _SocialOptionsRow extends StatelessWidget {
           width: 16,
         ),
         _SocialButton(
-          icon: Icon(
-            Icons.phone_outlined,
-            size: iconSize,
-            color: Colors.black,
+          icon: SvgPicture.asset(
+            StudioImages.whatsappLogo,
+            width: iconSize,
+            height: iconSize,
           ),
           onPressed: onPhoneClicked,
         ),
@@ -102,10 +100,10 @@ class _SocialOptionsRow extends StatelessWidget {
           width: 16,
         ),
         _SocialButton(
-          icon: Icon(
-            Icons.mail_outline,
-            size: iconSize,
-            color: Colors.black,
+          icon: SvgPicture.asset(
+            StudioImages.mailLogo,
+            width: iconSize,
+            height: iconSize,
           ),
           onPressed: onEmailClicked,
         ),
